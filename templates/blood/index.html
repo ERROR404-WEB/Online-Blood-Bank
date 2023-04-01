@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .xyz{
+          margin-bottom: 0px;
+          background-color: black;
+          background-image: url('{% static "image/bg.jpg" %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 97vh;
+        }
+        .logo-cnt{
+          padding: 240px 60px 0px 60px;
+        }
+        
+      .logo{
+        width:500px;
+        animation: blink 2s infinite;
+      }
+      @keyframes blink {
+
+       
+        20%{opacity: 100%;
+        
+      transform:scale(1.05);
+      
+}
+
+         
+      }
+      </style>
+      
+</head>
+<body>
+  {% include "blood/navbar.html" %}
+<br> 
+
+  <section class="xyz">
+    <div class="logo-cnt">
+      <img src="{% static "image/logo.png" %}" class="logo">
+    </div>
+  
+  </section>
+  <center>
+
+    <img src="{% static "image/bl.jpg" %}">
+
+  </center>
+        
+
+  
+</body>
+</html>
